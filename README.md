@@ -1,1 +1,1 @@
-This analysis is based on my final project in college using R, which had slight changes to the data and variables used.
+The dataset used is the number of infectious disease cases in West Java in 2021, obtained from [Open Data Jabar](https://opendata.jabarprov.go.id/id/hasil-pencarian?topic=2&region=1). The variables used are the number of cases of tuberculosis, HIV, leprosy, and malaria.
