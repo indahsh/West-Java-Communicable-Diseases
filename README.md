@@ -47,7 +47,7 @@ The figure below shows that most West Java HIV patients were 168. The lowest num
 The figure below shows that most West Java leprosy patients were 49. The lowest number of leprosy cases is in West Bandung Regency and Cimahi City, with 0 people, while the highest is in Bogor Regency, with 220 people.
 ![Rplot76](https://github.com/user-attachments/assets/b550c62f-406f-48c1-b073-64a21fee591a)
 
-### 4. Number of Malaria Cases (X3)
+### 4. Number of Malaria Cases (X4)
 The figure below shows that most West Java leprosy patients were 7. The lowest number of leprosy cases is in 8 regencies/cities, with 0 people, while the highest is in Cimahi City, with 43 people.
 ![Rplot77](https://github.com/user-attachments/assets/6a028000-6a3d-4790-a960-94e8f60a9b8a)
 
