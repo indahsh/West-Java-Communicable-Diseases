@@ -37,18 +37,22 @@ The spread of disease can be used as a characteristic to categorize an area. Clu
 ### Descriptive Statistics
 #### 1. Number of Tuberculosis Cases (X1)
 The figure below shows that most West Java tuberculosis patients were 3,306. The lowest number of tuberculosis cases is in Banjar City, with 269 people, while the highest is in Bogor Regency, with 11,946 people.
+
 ![Rplot74](https://github.com/user-attachments/assets/02c04d36-2531-4e6f-a6c0-4dcc4f2dfc09)
 
 #### 2. Number of HIV Cases (X2)
 The figure below shows that most West Java HIV patients were 168. The lowest number of HIV cases is in Pangandaran Regency, with 4 people, while the highest is in Bogor Regency, with 430 people.
+
 ![Rplot75](https://github.com/user-attachments/assets/3e1759a7-8922-41db-bf5f-a3d0e4f1b221)
 
 ### 3. Number of Leprosy Cases (X3)
 The figure below shows that most West Java leprosy patients were 49. The lowest number of leprosy cases is in West Bandung Regency and Cimahi City, with 0 people, while the highest is in Bogor Regency, with 220 people.
+
 ![Rplot76](https://github.com/user-attachments/assets/b550c62f-406f-48c1-b073-64a21fee591a)
 
 ### 4. Number of Malaria Cases (X4)
 The figure below shows that most West Java leprosy patients were 7. The lowest number of leprosy cases is in 8 regencies/cities, with 0 people, while the highest is in Cimahi City, with 43 people.
+
 ![Rplot77](https://github.com/user-attachments/assets/6a028000-6a3d-4790-a960-94e8f60a9b8a)
 
 ### Outlier Detection
