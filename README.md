@@ -184,7 +184,7 @@ $PC_4 = 0.11X_1 - 0.90X_2 + 0.42X_4$
 </p>
 
 <p align="justify">
-  Furthermore, each point is categorized based on the Euclidean distance value. A point is a core point if the number of points in the Epsilon radius ≥ MinPts (4), a border point if the number of points in the Epsilon radius < MinPts (4) and neighbouring the core point, and noise if the number of points in the Epsilon radius < MinPts (4) and not neighbouring the core point. The cluster is first determined at the core point. If a regencies/cities becomes the first core point, it belongs to cluster 1. If a regencies/cities becomes the second core point and is not connected to a point in cluster 1, it belongs to cluster 2. Furthermore, if there is a connected point in cluster 1, the point is in cluster 1, while if there is a connected point in cluster 2, then the point is in cluster 2. 
+  Furthermore, each point is categorized based on the Euclidean distance value. A point is a core point if the number of points in the Epsilon radius ≥ MinPts (4), a border point if the number of points in the Epsilon radius < MinPts (4) and neighbouring the core point, and noise if the number of points in the Epsilon radius < MinPts (4) and not neighbouring the core point. The cluster is first determined at the core point. If a regency/city becomes the first core point, it belongs to cluster 1. If a regency/city becomes the second core point and is not connected to a point in cluster 1, it belongs to cluster 2. Furthermore, if there is a connected point in cluster 1, the point is in cluster 1, while if there is a connected point in cluster 2, then the point is in cluster 2. 
 </p>
     
 <p align="justify">
@@ -240,10 +240,10 @@ $PC_4 = 0.11X_1 - 0.90X_2 + 0.42X_4$
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/451b3dee-9cf8-44c7-9aae-801acc6c1e2b" width="50%"/>
+  <img src="https://github.com/user-attachments/assets/15a45d22-398b-4de0-8b5d-fb2f33505de5" width="75%"/>
 </p>
 
 ## CONCLUSION
 <p align="justify">
-  Based on the discussion above, it can be concluded that grouping regencies/cities in West Java based on communicable disease cases with K-Medoids formed 4 clusters. Cluster 1 consists of 7 regencies/cities, cluster 2 consists of 6 regencies/cities, cluster 3 consists of 11 regencies/cities, and cluster 4 consists of 3 regencies/cities. Grouping regencies/cities in West Java based on communicable disease cases with DBSCAN formed 2 clusters with noise of 6 regencies/cities. Cluster 1 consists of 17 regencies/cities and cluster 2 consists of 4 regencies/cities. K-Medoids is a better method than DBSCAN for clustering regencies/cities in West Java based on communicable disease cases. This is indicated by the higher Silhouette coefficient value.
+  Based on the discussion above, it can be concluded that grouping regencies/cities in West Java based on communicable disease cases with K-Medoids formed 4 clusters. Cluster 1 consists of 7 regencies/cities, cluster 2 consists of 6 regencies/cities, cluster 3 consists of 11 regencies/cities, and cluster 4 consists of 3 regencies/cities. Grouping regencies/cities in West Java based on communicable disease cases with DBSCAN formed 2 clusters with noise of 6 regencies/cities. Cluster 1 consists of 17 regencies/cities, and cluster 2 consists of 4 regencies/cities. K-Medoids is a better method than DBSCAN for clustering regencies/cities in West Java based on communicable disease cases. This is indicated by the higher Silhouette coefficient value.
 </p>
