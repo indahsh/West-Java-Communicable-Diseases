@@ -244,7 +244,7 @@ print(comparison)
 
 #Characteristics
 #Cluster 1
-cluster_1 = read_excel("D:/04. KERJA/Portofolio/Communicable diseases in West Java (2021)/Communicable diseases.xlsx",
+cluster_1 = read_excel("D:/04. KERJA/Portofolio/Communicable diseases in West Java (2021)/Communicable Diseases West Java Dataset.xlsx",
                        sheet = "Cluster 1")
 data_cluster1 = as.data.frame(cluster_1)
 head(data_cluster1)
@@ -252,7 +252,7 @@ average_cluster1 = colMeans(data_cluster1[,-1])
 round(average_cluster1, 2)
 
 #Cluster 2
-cluster_2 = read_excel("D:/04. KERJA/Portofolio/Communicable diseases in West Java (2021)/Communicable diseases.xlsx",
+cluster_2 = read_excel("D:/04. KERJA/Portofolio/Communicable diseases in West Java (2021)/Communicable Diseases West Java Dataset.xlsx",
                        sheet = "Cluster 2")
 data_cluster2 = as.data.frame(cluster_2)
 head(data_cluster2)
@@ -260,7 +260,7 @@ average_cluster2 = colMeans(data_cluster2[,-1])
 round(average_cluster2, 2)
 
 #Cluster 3
-cluster_3 = read_excel("D:/04. KERJA/Portofolio/Communicable diseases in West Java (2021)/Communicable diseases.xlsx",
+cluster_3 = read_excel("D:/04. KERJA/Portofolio/Communicable diseases in West Java (2021)/Communicable Diseases West Java Dataset.xlsx",
                        sheet = "Cluster 3")
 data_cluster3 = as.data.frame(cluster_3)
 head(data_cluster3)
@@ -268,7 +268,7 @@ average_cluster3 = colMeans(data_cluster3[,-1])
 round(average_cluster3, 2)
 
 #Cluster 4
-cluster_4 = read_excel("D:/04. KERJA/Portofolio/Communicable diseases in West Java (2021)/Communicable diseases.xlsx",
+cluster_4 = read_excel("D:/04. KERJA/Portofolio/Communicable diseases in West Java (2021)/Communicable Diseases West Java Dataset.xlsx",
                        sheet = "Cluster 4")
 data_cluster4 = as.data.frame(cluster_4)
 head(data_cluster4)
