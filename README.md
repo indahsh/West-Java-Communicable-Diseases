@@ -1,6 +1,6 @@
 # CLUSTER ANALYSIS OF K-MEDOIDS AND DBSCAN FOR REGENCIES/CITIES GROUPING IN WEST JAVA BASED ON COMMUNICABLE DISEASES
 <p align="justify">
-  This project uses R programming language to process data and QGIS to map the clustering results.
+  This project uses R programming language/RStudio to process data and QGIS to map the clustering results.
 </p>
 
 ## INTRODUCTION
