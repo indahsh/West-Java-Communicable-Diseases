@@ -20,6 +20,12 @@
   The spread of disease can be used as a characteristic to categorize an area. Cluster analysis can be used to group objects into several clusters based on specific traits.
 </p>
 
+## OBJECTIVES
+The objectives to be achieved in this research are as follows the following.
+1. <p align="justify">Obtain the results of K-Medoids clustering in districts/cities in West Java based on infectious disease cases.</p>
+2. <p align="justify">Obtain the results of DBSCAN clustering in districts/cities in West Java based on infectious disease cases.</p>
+3. <p align="justify">Knowing the better method between K-Medoids and DBSCAN to group districts/cities in West Java based on infectious disease cases.</p>
+
 ## DATA AND METHOD
 ### Data
 <p align="justify">
@@ -34,19 +40,17 @@
 | $X_4$ | Number of malaria cases | People |
 
 ### Method
-<p align="justify">
-  The steps used in this research are as follows.
-1. Collecting data based on research variables.
-2. Perform descriptive statistical analysis on each variable.
-3. Perform outlier detection by calculating Mahalanobis distance.
-4. Checking the assumption of non-multicollinearity using Pearson correlation.
-5. If there is a correlation, it is handled using principal component analysis.
-6. Perform cluster analysis using the K-Medoids method.
-7. Perform cluster analysis using the DBSCAN method.
-8. Calculate the cluster validity value with the Silhouette coefficient.
-9. Select the better cluster between K-Medoids and DBSCAN based on the Silhouette coefficient value.
-10. Mapping regencies/cities in West Java based on the better cluster.
-</p>
+The steps used in this research are as follows.
+1. <p align="justify">Collecting data based on research variables.</p>
+2. <p align="justify">Perform descriptive statistical analysis on each variable.</p>
+3. <p align="justify">Perform outlier detection by calculating Mahalanobis distance.</p>
+4. <p align="justify">Checking the assumption of non-multicollinearity using Pearson correlation.</p>
+5. <p align="justify">If there is a correlation, it is handled using principal component analysis.</p>
+6. <p align="justify">Perform cluster analysis using the K-Medoids method.</p>
+7. <p align="justify">Perform cluster analysis using the DBSCAN method.</p>
+8. <p align="justify">Calculate the cluster validity value with the Silhouette coefficient.</p>
+9. <p align="justify">Select the better cluster between K-Medoids and DBSCAN based on the Silhouette coefficient value.</p>
+10. <p align="justify">Mapping regencies/cities in West Java based on the better cluster.</p>
 
 ## RESULTS AND DISCUSSION
 ### Descriptive Statistics
