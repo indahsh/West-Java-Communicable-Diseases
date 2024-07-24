@@ -4,7 +4,7 @@ library(dbscan)
 library(factoextra)
 
 #Input Data
-input_data = read_excel("D:/04. KERJA/Portofolio/Communicable diseases in West Java (2021)/Communicable diseases.xlsx",
+input_data = read_excel("D:/04. KERJA/Portofolio/Communicable diseases in West Java (2021)/Communicable Diseases West Java Dataset.xlsx",
                         sheet = "Data")
 data = as.data.frame(input_data[,-1])
 head(data)
