@@ -168,16 +168,15 @@ $PC_4 = 0.11X_1 - 0.90X_2 + 0.42X_4$
 ### 4.6. DBSCAN
 <p align="justify">
   In the k-distance graph, the x-axis is the point, and the y-axis is the Euclidean distance of the k-nearest neighbours. The border point is marked with a black line and is determined at the 21<sup>st</sup> point for a value of k = 3 and the 24<sup>th</sup> point for a value of k = 4 because the graph has a sharp rise. The value of k is considered as MinPts.
-1. The dashed red lines in the figure below indicate the temporary Epsilon values of 1.42, 1.27, 1.22, 1.19, 1.18, 1.12, 1.10, 0.98, 0.93, 0.84, 0.70, 0.68, 0.59, 0.58, 0.51, and 0.48.
 </p>
+  
+1. <p align="justify">The dashed red lines in the figure below indicate the temporary Epsilon values of 1.42, 1.27, 1.22, 1.19, 1.18, 1.12, 1.10, 0.98, 0.93, 0.84, 0.70, 0.68, 0.59, 0.58, 0.51, and 0.48.</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3858bc3d-a65c-44e8-9452-e54090f51f3e" width="50%"/>
 </p>
 
-<p align="justify">
-2. The dashed red lines in the figure below indicate the temporary Epsilon values of 2.13, 2.09, 1.97, 1.64, 1.53, 1.47, 1.46, 1.37, 1.27, 1.20, 1.13, 1.01, 0.83, 0.79, 0.65, 0.62, and 0.60.
-</p>
+2. <p align="justify">The dashed red lines in the figure below indicate the temporary Epsilon values of 2.13, 2.09, 1.97, 1.64, 1.53, 1.47, 1.46, 1.37, 1.27, 1.20, 1.13, 1.01, 0.83, 0.79, 0.65, 0.62, and 0.60.</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/451b3dee-9cf8-44c7-9aae-801acc6c1e2b" width="50%"/>
