@@ -3,7 +3,7 @@
   This project uses R with RStudio to process data and QGIS to map the clustering results.
 </p>
 
-## INTRODUCTION
+## 1. INTRODUCTION
 <p align="justify">
   Sustainable Development Goals (SDGs) are goals or actions designed globally to build and improve people's quality of life. The SDGs have 17 goals and 169 targets expected to be achieved by 2030. Goal 3 focuses on health to ensure healthy lives and improve the well-being of all people of all ages. Target 3.3 of the SDGs is to end the epidemics of AIDS, tuberculosis, malaria, and neglected tropical diseases and combat hepatitis, waterborne diseases, and other communicable diseases. The types of communicable diseases focused on achieving these targets are tuberculosis, HIV, hepatitis B, leprosy, malaria, and filariasis.
 </p>
@@ -20,14 +20,14 @@
   The spread of disease can be used as a characteristic to categorize an area. Cluster analysis can be used to group objects into several clusters based on specific traits.
 </p>
 
-## OBJECTIVES
+## 2. OBJECTIVES
 The objectives to be achieved in this research are as follows the following.
 1. <p align="justify">Obtain the results of K-Medoids clustering in districts/cities in West Java based on infectious disease cases.</p>
 2. <p align="justify">Obtain the results of DBSCAN clustering in districts/cities in West Java based on infectious disease cases.</p>
 3. <p align="justify">Knowing the better method between K-Medoids and DBSCAN to group districts/cities in West Java based on infectious disease cases.</p>
 
-## DATA AND METHOD
-### Data
+## 3. DATA AND METHOD
+### 3.1. Data
 <p align="justify">
   The data used in this study is secondary data obtained from <a href="https://opendata.jabarprov.go.id/id/hasil-pencarian?topic=2&region=1">Open Data Jabar</a>, namely data on the number of communicable disease cases in 2021. The data used were 27 regencies/cities in West Java, consisting of 9 cities and 18 regencies. The variables used are the types of communicable diseases that are the focus in achieving target 3.3 of the SDGs as presented below.
 </p>
@@ -39,7 +39,7 @@ The objectives to be achieved in this research are as follows the following.
 | $X_3$ | Number of leprosy cases | People |
 | $X_4$ | Number of malaria cases | People |
 
-### Method
+### 3.2. Method
 The steps used in this research are as follows.
 1. <p align="justify">Collecting data based on research variables.</p>
 2. <p align="justify">Perform descriptive statistical analysis on each variable.</p>
@@ -52,9 +52,9 @@ The steps used in this research are as follows.
 9. <p align="justify">Select the better cluster between K-Medoids and DBSCAN based on the Silhouette coefficient value.</p>
 10. <p align="justify">Mapping regencies/cities in West Java based on the better cluster.</p>
 
-## RESULTS AND DISCUSSION
-### Descriptive Statistics
-#### 1. Number of Tuberculosis Cases
+## 4. RESULTS AND DISCUSSION
+### 4.1. Descriptive Statistics
+#### 4.1.1. Number of Tuberculosis Cases
 <p align="justify">
   The figure below shows that most West Java tuberculosis patients were 3,306. The lowest number of tuberculosis cases is in Banjar City, with 269 people, while the highest is in Bogor Regency, with 11,946 people.
 </p>
@@ -63,7 +63,7 @@ The steps used in this research are as follows.
   <img src="https://github.com/user-attachments/assets/02c04d36-2531-4e6f-a6c0-4dcc4f2dfc09" width="50%"/>
 </p>
 
-#### 2. Number of HIV Cases
+#### 4.1.2. Number of HIV Cases
 <p align="justify">
   The figure below shows that most West Java HIV patients were 168. The lowest number of HIV cases is in Pangandaran Regency, with 4 people, while the highest is in Bogor Regency, with 430 people.
 </p>
@@ -72,7 +72,7 @@ The steps used in this research are as follows.
   <img src="https://github.com/user-attachments/assets/3e1759a7-8922-41db-bf5f-a3d0e4f1b221" width="50%"/>
 </p>
 
-#### 3. Number of Leprosy Cases
+#### 4.1.3. Number of Leprosy Cases
 <p align="justify">
   The figure below shows that most West Java leprosy patients were 49. The lowest number of leprosy cases is in West Bandung Regency and Cimahi City, with 0 people, while the highest is in Bogor Regency, with 220 people.
 </p>
@@ -81,7 +81,7 @@ The steps used in this research are as follows.
   <img src="https://github.com/user-attachments/assets/b550c62f-406f-48c1-b073-64a21fee591a" width="50%"/>
 </p>
 
-#### 4. Number of Malaria Cases
+#### 4.1.4. Number of Malaria Cases
 <p align="justify">
   The figure below shows that most West Java leprosy patients were 7. The lowest number of leprosy cases is in 8 regencies/cities, with 0 people, while the highest is in Cimahi City, with 43 people.
 </p>
@@ -90,7 +90,7 @@ The steps used in this research are as follows.
   <img src="https://github.com/user-attachments/assets/6a028000-6a3d-4790-a960-94e8f60a9b8a" width="50%"/>
 </p>
 
-### Outlier Detection
+### 4.2. Outlier Detection
 <p align="justify">
   The objects presented in the table below are identified as outliers because they have Mahalanobis distance values > $\chi^2_{27;0.05}$ (9.49). Therefore, K-Medoids and DBSCAN can be applied because they are robust to outliers.
 </p>
@@ -102,7 +102,7 @@ The steps used in this research are as follows.
 | Bandung City  | 12.50  |
 | Depok City  | 15.66  |
 
-### Nonmulticollinearity Assumption
+### 4.3. Nonmulticollinearity Assumption
 <p align="justify">
   The hypothesis tested is as follows.
 </p>
@@ -122,7 +122,7 @@ $H_1: \rho \neq 0$ (there is a correlation between variables)
 | $X_3$ | <ins>0.02</ins> | <ins>0.01</ins> | | |
 | $X_4$ | 0.80 | 0.15 | 0.71 | |
 
-### Principal Component Analysis
+### 4.4. Principal Component Analysis
 <p align="justify">
   The results of the principal component analysis calculations are presented in the table below.
 </p>
@@ -153,7 +153,7 @@ $PC_4 = 0.11X_1 - 0.90X_2 + 0.42X_4$
   The main components used are as many as the initial variables, namely 6 because this analysis aims to eliminate the correlation between variables. Hence, there is no need to reduce the variables. After obtaining the principal component equation, a substitution is made to the principal component equation to obtain the principal component score, which is used as new data for further analysis.
 </p>
 
-### K-Medoids
+### 4.5. K-Medoids
 <p align="justify">
   Previous research by Septianingsih (2022) related to grouping regencies/cities in East Java based on the level of communicable disease cases with average linkage resulted in an optimal number of clusters of 4. Therefore, the determination of the number of clusters in this study with K-Medoids is 4 clusters. Then, the Euclidean distance between the object and the medoid is calculated, and each object is grouped into a cluster based on the closest medoid distance. The same steps are performed on the new medoid candidates. The objects selected as new medoid candidates were West Bandung Regency for cluster 1, Purwakarta Regency for cluster 2, Indramayu Regency for cluster 3, and Cimahi City for cluster 4. The medoid selection iteration process is stopped because of the value of S > 0. The results of clustering with K-Medoids are presented in the table below.
 </p>
@@ -165,7 +165,7 @@ $PC_4 = 0.11X_1 - 0.90X_2 + 0.42X_4$
 | 3 | 11 regencies/cities | Tasikmalaya Regency, Ciamis Regency, Kuningan Regency, Majalengka Regency, Sumedang Regency, Purwakarta Regency, West Bandung Regency, Pangandaran Regency, Sukabumi City, Tasikmalaya City, Banjar City |
 | 4 | 3 regencies/cities | Bogor City, Depok City, Cimahi City |
 
-### DBSCAN
+### 4.6. DBSCAN
 <p align="justify">
   In the k-distance graph, the x-axis is the point, and the y-axis is the Euclidean distance of the k-nearest neighbours. The border point is marked with a black line and is determined at the 21<sup>st</sup> point for a value of k = 3 and the 24<sup>th</sup> point for a value of k = 4 because the graph has a sharp rise. The value of k is considered as MinPts.
 1. The dashed red lines in the figure below indicate the temporary Epsilon values of 1.42, 1.27, 1.22, 1.19, 1.18, 1.12, 1.10, 0.98, 0.93, 0.84, 0.70, 0.68, 0.59, 0.58, 0.51, and 0.48.
@@ -201,7 +201,7 @@ $PC_4 = 0.11X_1 - 0.90X_2 + 0.42X_4$
 | 2 | 4 regencies/cities | Cirebon Regency, Subang Regency, Karawang Regency, Bekasi Regency |
 | Noise | 6 regencies/cities | Bogor Regency, Indramayu Regency, Bogor City, Bandung City, Bekasi City, Cimahi City |
 
-### Selection of The Best Method
+### 4.7. Selection of The Best Method
 <p align="justify">
   The Silhouette coefficient values in the table below show that K-Medoids and DBSCAN produce weak cluster structures. K-Medoids have a higher Silhouette coefficient value than DBSCAN. Therefore, the clusters formed with K-Medoids are better than those formed by DBSCAN.
 </p>
@@ -211,7 +211,7 @@ $PC_4 = 0.11X_1 - 0.90X_2 + 0.42X_4$
 | K-Medoids  | 0.31  |
 | DBSCAN  | 0.30  |
 
-### Interpretation
+### 4.8. Interpretation
 <p align="justify">
   This project uses 4 variables to classify regencies/cities in West Java based on the number of communicable disease cases in 2021. The variables used were the number of tuberculosis cases ($X_1$), the number of HIV cases ($X_2$), the number of leprosy cases ($X_3$), and the number of malaria cases ($X_4$). The clustering results with K-Medoids are better than those with DBSCAN. Each cluster has different characteristics based on the number of communicable disease cases. The average calculation results of each variable in each cluster are presented in the table below.
 </p>
@@ -247,7 +247,7 @@ $PC_4 = 0.11X_1 - 0.90X_2 + 0.42X_4$
   <img src="https://github.com/user-attachments/assets/15a45d22-398b-4de0-8b5d-fb2f33505de5" width="75%"/>
 </p>
 
-## CONCLUSION
+## 5. CONCLUSION
 <p align="justify">
   Based on the discussion above, it can be concluded that grouping regencies/cities in West Java based on communicable disease cases with K-Medoids formed 4 clusters. Cluster 1 consists of 7 regencies/cities, cluster 2 consists of 6 regencies/cities, cluster 3 consists of 11 regencies/cities, and cluster 4 consists of 3 regencies/cities. Grouping regencies/cities in West Java based on communicable disease cases with DBSCAN formed 2 clusters with noise of 6 regencies/cities. Cluster 1 consists of 17 regencies/cities, and cluster 2 consists of 4 regencies/cities. K-Medoids is a better method than DBSCAN for clustering regencies/cities in West Java based on communicable disease cases. This is indicated by the higher Silhouette coefficient value.
 </p>
